@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: palevioletred;
+    background-image: url(https://cdn.5minvideo.id/images/2020/04/gambar-bunga-sakura-di-tokyo.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 1000px;
+    height: 550px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator{
+    width: 320px;
+    height: 520px;
+    background: linear-gradient(to bottom, #66ffff 0%, #ffccff 100%);
+    margin: 0 auto;
+    top: 20px;
+    justify-content: center;
+    opacity: 70%;
+    border-radius: 20px
+}
+
+.result {
+    height: 120px;
+}
+
+.history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 5px;
+    font-size: 15px;
+    color: #919191;
+}
+
+.output{
+    text-align: right;
+    height: 50px;
+    margin:20px 20px;
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.keyboard {
+    height: 400px;
+}
+
+.operator, .number,.empty{
+    width:  50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, .empty {
+    background-color: #eaedef;
+}
+
+.number:hover{
+    background-color: rgb(135, 154, 224);
+}
+
+.operator{
+    background-color: lightgray;
+}
+
+.operator:hover{
+    background-color: rgb(235, 147, 217);
+}
+
+.number, .operator{
+    cursor: pointer;
+}
+
+.operator:active, .number:active{
+    font-size: 13px;
+
+}
+
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+
+.nama{
+    position: absolute;
+    background: lightblue;
+    padding: 5px 15px;
+    border-radius: 20px;
+    opacity: 70%;
+}
+
